@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動物シルエットクイズ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>動物シルエットクイズ</h1>
+            <div class="score-board">
+                <span>スコア: <span id="score">0</span></span>
+                <span>問題: <span id="current">1</span> / <span id="total">10</span></span>
+            </div>
+        </header>
+
+        <main>
+            <div class="quiz-area">
+                <div class="silhouette-container">
+                    <div id="silhouette" class="silhouette">🐶</div>
+                </div>
+
+                <div class="question">
+                    <p>この動物は何でしょう？</p>
+                </div>
+
+                <div class="options" id="options">
+                    <!-- JavaScriptで選択肢を生成 -->
+                </div>
+
+                <div class="result" id="result"></div>
+
+                <button id="nextBtn" class="next-btn" style="display: none;">次の問題</button>
+            </div>
+        </main>
+
+        <div class="game-over" id="gameOver" style="display: none;">
+            <h2>ゲーム終了！</h2>
+            <p class="final-score">あなたのスコア: <span id="finalScore">0</span> / <span id="finalTotal">10</span></p>
+            <button id="restartBtn" class="restart-btn">もう一度プレイ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
